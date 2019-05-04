@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "ipfs-http-client": "^30.1.4"
+  },
+  "scripts": {
+    "build": "webpack",
+    "deploy": "webpack && gh-pages -d dist",
+    "dev": "webpack --watch --mode development",
+    "load": "(cd dist && web-ext run)",
+    "prettier": "prettier --write src/*"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4",
+    "web-ext": "^3.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

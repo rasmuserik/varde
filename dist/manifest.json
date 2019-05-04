@@ -1,0 +1,28 @@
+{
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Varde",
+    "default_popup": "index.html",
+    "default_icon": {
+      "19": "rock19.png",
+      "38": "rock38.png"
+    }
+  },
+  "icons": {
+    "48": "rock48.png",
+    "96": "rock96.png"
+  },
+  "permissions": [
+    "history"
+  ],
+  "description": "Curated bookmaps in ipfs",
+  "homepage_url": "http://varde.solsort.com",
+  "manifest_version": 2, 
+  "name": "Varde",
+  "version": "1.0",
+  "permissions": [
+    "<all_urls>" 
+  ]
+}
+
+
