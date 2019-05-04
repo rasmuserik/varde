@@ -1,15 +1,16 @@
 import './bookmarks'
 
+import IpfsHttpClient from 'ipfs-http-client'
+
 ;(function () {
-  // let client = new IpfsHttpClient();
-  document.getElementById('submit').onclick = async function () {
+  let client = new IpfsHttpClient('localhost', 5001);
+  document.getElementById('submit').onclick = function () {
     try {
-    let res = await client.dag.put({
-      data: 'foo'
-    });
-      console.warn(res);
+       client.dag.put({ data: "foo" });
     } catch (err) {
-      alert('No fun: ' + err);
+      console.log(err.toString());
     }
   };
+
+  console.log('hest:%o', client);
 })()
