@@ -10,6 +10,12 @@ This should be possible:
   3. Add a number of tags to a site
   4. See who has added tags to a site
 
+## Wha?
+
+	echo '{"foo": "bar"}' | ipfs dag put
+	ipfs dag get zdpuAoKMEvka7gKGSjF9B3of1F5gE5MyMMywxTC13wCmouQrf
+	ipfs dht put /ipns/zdpuAoKMEvka7gKGSjF9B3of1F5gE5MyMMywxTC13wCmouQrf '{"foo": "barbar"}'
+
 ## Development
 
 - `npm install`
